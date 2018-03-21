@@ -50,7 +50,7 @@ public class MainActivity extends AppCompatActivity implements OnQuickSideBarTou
 
         //GSON解释出来
         Type listType = new TypeToken<LinkedList<City>>(){}.getType();
-        Gson gson = new Gson();
+       // Gson gson = new Gson();
         LinkedList<City> cities = gson.fromJson(DataConstants.cityDataList, listType);
 
         ArrayList<String> customLetters = new ArrayList<>();
